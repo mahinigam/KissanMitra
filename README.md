@@ -21,3 +21,57 @@ Minimize post-harvest losses with efficient cold storage and transport systems.
 Foster a transparent and sustainable agricultural market.
 
 Encourage technological adoption in rural communities.
+
+Project Structure: 
+FarmerApp/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── farmapp/
+│   │   │           ├── config/
+│   │   │           │   └── DatabaseConfig.java
+│   │   │           ├── dao/
+│   │   │           │   ├── FarmerDAO.java
+│   │   │           │   └── ProductDAO.java
+│   │   │           ├── model/
+│   │   │           │   ├── Farmer.java
+│   │   │           │   └── Product.java
+│   │   │           ├── servlet/
+│   │   │           │   ├── FarmerRegistrationServlet.java
+│   │   │           │   ├── LoginServlet.java
+│   │   │           │   └── ProductServlet.java
+│   │   │           └── util/
+│   │   │               └── DatabaseUtil.java
+│   │   ├── resources/
+│   │   │   └── db.properties
+│   │   └── webapp/
+│   │       ├── WEB-INF/
+│   │       │   └── web.xml
+│   │       ├── css/
+│   │       │   └── style.css
+│   │       ├── js/
+│   │       │   └── validation.js
+│   │       ├── index.jsp
+│   │       ├── login.jsp
+│   │       ├── register.jsp
+│   │       ├── product_form,jsp
+│   │       ├── product_list.jsp
+│   │       └── dashboard.jsp
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── farmmarket/
+│                   └── dao/
+│                       ├── FarmerDAOTest.java
+│                       └── ProductDAOTest.java
+│                   └── model/
+│                       ├── FarmerTest.java
+│                       └── ProductTest.java
+│                   └── servlet/
+│                       ├── FarmerRegistrationServletTest.java
+│                       ├── LoginServletTest.java
+│                       └── ProductServletTest.java
+│                   └── util/
+│                       └── DatabaseUtilTest.java
